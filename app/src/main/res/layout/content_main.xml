@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
+    android:gravity="center"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="wrap_content"
@@ -12,19 +12,23 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/first_number"/>
+            android:hint="@string/first_number"
+            android:id="@+id/no1"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/second_number"/>
+            android:hint="@string/second_number"
+            android:id="@+id/no2"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/operation"/>
+            android:text="@string/operation"
+            android:id="@+id/operation"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/result"/>
+            android:text="@string/result"
+            android:id="@+id/res"/>
     </LinearLayout>
     <LinearLayout
     android:layout_width="wrap_content"
@@ -34,19 +38,23 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/addition"/>
+        android:text="@string/addition"
+        android:id="@+id/add_op" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/subtraction"/>
+        android:hint="@string/subtraction"
+        android:id="@+id/sub_op" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/multiplication"/>
+        android:text="@string/multiplication"
+        android:id="@+id/mult_op" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/division"/>
+        android:text="@string/division"
+        android:id="@+id/div_op" />
 </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -56,7 +64,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/clear_all"/>
+            android:text="@string/clear_all"
+            android:id="@+id/reset" />
 
     </LinearLayout>
 </LinearLayout>

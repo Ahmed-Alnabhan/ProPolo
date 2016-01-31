@@ -8,9 +8,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class Person extends AppCompatActivity {
-
+    private Button btnAdd;
+    private Button btnSub;
+    private Button btnMul;
+    private Button btnDiv;
+    private Button btnRst;
+    private EditText txtNo1;
+    private EditText txtNo2;
+    private TextView lblOp;
+    private TextView lblRes;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +37,17 @@ public class Person extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        // Create the widgets
+        btnAdd = (Button)findViewById(R.id.add_op);
+        btnSub = (Button)findViewById(R.id.sub_op);
+        btnMul = (Button)findViewById(R.id.mult_op);
+        btnDiv = (Button)findViewById(R.id.div_op);
+        btnRst = (Button)findViewById(R.id.reset);
+        txtNo1 = (EditText)findViewById(R.id.no1);
+        txtNo2 = (EditText)findViewById(R.id.no2);
+        lblOp = (TextView)findViewById(R.id.operation);
+        lblRes = (TextView)findViewById(R.id.res);
     }
 
     @Override
