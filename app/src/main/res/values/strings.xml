@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">ProPolo</string>
     <string name="action_settings">Settings</string>
+    <string name="first_number">Enter num1</string>
+    <string name="second_number">Enter num2</string>
+    <string name="operation">Operation</string>
+    <string name="result">Result</string>
+    <string name="addition">+</string>
+    <string name="subtraction">-</string>
+    <string name="multiplication">*</string>
+    <string name="division">/</string>
+    <string name="clear_all">Reset</string>
 </resources>
